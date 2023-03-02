@@ -12,7 +12,16 @@ function reverse(str) {
   }
 }
 
+function reverseIterative(str) {
+  var ans = "";
+  for(let i = str.length - 1; i >= 0; i--) {
+    ans += str.charAt(i);
+  } 
+  return ans;
+}
+
 
 const reverseString = reverse();
-console.log(reverseString('yoyo mastery'));
+console.log("Recursive: ", reverseString('yoyo mastery'));
+console.log("Iterative: ", reverseIterative('yoyo mastery'));
 //should return: 'yretsam oyoy'
