@@ -12,6 +12,7 @@ function reverse(str) {
   }
 }
 
+//Iterative Approach
 function reverseIterative(str) {
   var ans = "";
   for(let i = str.length - 1; i >= 0; i--) {
